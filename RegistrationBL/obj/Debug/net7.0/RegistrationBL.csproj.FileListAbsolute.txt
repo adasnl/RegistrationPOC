@@ -1,0 +1,15 @@
+D:\practice\Registration\RegistrationBL\bin\Debug\net7.0\RegistrationBL.deps.json
+D:\practice\Registration\RegistrationBL\bin\Debug\net7.0\RegistrationBL.dll
+D:\practice\Registration\RegistrationBL\bin\Debug\net7.0\RegistrationBL.pdb
+D:\practice\Registration\RegistrationBL\bin\Debug\net7.0\RegistrationDA.dll
+D:\practice\Registration\RegistrationBL\bin\Debug\net7.0\RegistrationDA.pdb
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\RegistrationBL.csproj.AssemblyReference.cache
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\RegistrationBL.GeneratedMSBuildEditorConfig.editorconfig
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\RegistrationBL.AssemblyInfoInputs.cache
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\RegistrationBL.AssemblyInfo.cs
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\RegistrationBL.csproj.CoreCompileInputs.cache
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\RegistrationBL.csproj.CopyComplete
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\RegistrationBL.dll
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\refint\RegistrationBL.dll
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\RegistrationBL.pdb
+D:\practice\Registration\RegistrationBL\obj\Debug\net7.0\ref\RegistrationBL.dll

@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Host": {
+    "CORS": "*"
+  },
+  "Logging": {
+    "ApplicationInsights": {
+      "LogLevel": {
+        "Default": "Debug",
+        "Microsoft": "Error"
+      }
+    }
+  }
+}

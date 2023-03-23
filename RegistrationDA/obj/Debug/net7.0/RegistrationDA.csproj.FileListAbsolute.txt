@@ -1,0 +1,14 @@
+D:\practice\Registration\RegistrationDA\bin\Debug\net7.0\RegistrationDA.deps.json
+D:\practice\Registration\RegistrationDA\bin\Debug\net7.0\RegistrationDA.runtimeconfig.json
+D:\practice\Registration\RegistrationDA\bin\Debug\net7.0\RegistrationDA.dll
+D:\practice\Registration\RegistrationDA\bin\Debug\net7.0\RegistrationDA.pdb
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\RegistrationDA.csproj.AssemblyReference.cache
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\RegistrationDA.GeneratedMSBuildEditorConfig.editorconfig
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\RegistrationDA.AssemblyInfoInputs.cache
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\RegistrationDA.AssemblyInfo.cs
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\RegistrationDA.csproj.CoreCompileInputs.cache
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\RegistrationDA.dll
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\refint\RegistrationDA.dll
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\RegistrationDA.pdb
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\RegistrationDA.genruntimeconfig.cache
+D:\practice\Registration\RegistrationDA\obj\Debug\net7.0\ref\RegistrationDA.dll
