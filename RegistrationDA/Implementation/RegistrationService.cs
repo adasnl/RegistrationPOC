@@ -90,7 +90,12 @@ namespace RegistrationDA.Implementation
                     if (string.IsNullOrWhiteSpace(value))
                         return registrations;
                     else
-                        return registrations.Where(_ => _.Name.Contains(value) || _.Email.Contains(value) || _.City.Contains(value)).Select(_ => _).ToList();
+                    {
+                        var result = registrations.Where(_ => _.Name.Contains(value, StringComparison.OrdinalIgnoreCase)
+                        || _.Email.Contains(value, StringComparison.OrdinalIgnoreCase)
+                        || _.City.Contains(value, StringComparison.OrdinalIgnoreCase)).Select(_ => _).ToList();
+                        return result;
+                    }
                 }
             }
             catch (Exception ex) { throw ex; }
