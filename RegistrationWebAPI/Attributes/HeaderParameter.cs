@@ -16,6 +16,8 @@ namespace RegistrationWebAPI.Attributes
                 In = ParameterLocation.Header,
                 Required = true
             });
+
+            operation.Responses.Remove(StatusCodes.Status200OK.ToString());
         }
     }
 }

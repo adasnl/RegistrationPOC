@@ -2,18 +2,18 @@
 
 namespace RegistrationDA.Interface
 {
-    public interface IRegistration
+    public interface IRegistrationDataAccessService
     {
-        Task<bool> Create(Registration registration);
+        Task<bool> Create(Entities.Registration registration);
 
         Task<bool> Remove(int id);
 
-        Task<bool> Update(Registration registration);
+        Task<bool> Update(Entities.Registration registration);
 
-        Task<List<Registration>> GetAll();
+        Task<ICollection<Entities.Registration>> GetAll();
 
-        Task<Registration> RegistrationGetById(int id);
+        Task<Entities.Registration> RegistrationGetById(int id);
 
-        Task<List<Registration>> SearchRegistration(string value);
+        Task<ICollection<Entities.Registration>> SearchRegistration(string value);
     }
 }

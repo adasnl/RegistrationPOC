@@ -1,19 +1,17 @@
-﻿using RegistrationDA.Entities;
-
-namespace RegistrationBL.Interface
+﻿namespace RegistrationBL.Interface
 {
-    public interface IRegistrationBL
+    public interface IRegistrationBusinessLayerService
     {
-        Task<bool> Create(Registration registration);
+        Task<bool> Create(RegistrationDA.Entities.Registration registration);
 
         Task<bool> Remove(int id);
 
-        Task<bool> Update(Registration registration);
+        Task<bool> Update(RegistrationDA.Entities.Registration registration);
 
-        Task<List<Registration>> GetAll();
+        Task<ICollection<RegistrationDA.Entities.Registration>> GetAll();
 
-        Task<Registration> RegistrationGetById(int id);
+        Task<RegistrationDA.Entities.Registration> RegistrationGetById(int id);
 
-        Task<List<Registration>> SearchRegistration(string value);
+        Task<ICollection<RegistrationDA.Entities.Registration>> SearchRegistration(string value);
     }
 }

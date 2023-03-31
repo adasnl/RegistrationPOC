@@ -1,6 +1,9 @@
 using Microsoft.OpenApi.Models;
+using Registration.DataAccess.Implementation;
+using Registration.DataAccess.Interface;
 using RegistrationBL.Implementation;
 using RegistrationBL.Interface;
+using RegistrationDA.Entities;
 using RegistrationDA.Implementation;
 using RegistrationDA.Interface;
 using RegistrationWebAPI.Attributes;
@@ -44,8 +47,9 @@ builder.Services.AddSwaggerGen(_ =>
     });
 });
 
-builder.Services.AddScoped<IRegistration, RegistrationService>();
-builder.Services.AddScoped<IRegistrationBL, RegistrationBLService>();
+builder.Services.AddScoped<IRegistrationDataAccessService, RegistrationService>();
+builder.Services.AddScoped<IRegistrationBusinessLayerService, RegistrationBusinessLayerService>();
+builder.Services.AddDbContext<RepositoryDBContext>();
 
 var app = builder.Build();
 
@@ -55,8 +59,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
 
 app.UseHttpsRedirection();
 
@@ -69,8 +71,8 @@ app.UseCors(_ => _.AllowAnyOrigin()
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers();
-
 app.UseMiddleware<ApiKeyMiddleware>();
+
+app.MapControllers();
 
 app.Run();

@@ -2,11 +2,11 @@
 
 namespace RegistrationDA.Entities
 {
-    public class RegistrationDBContext : DbContext
+    public class RepositoryDBContext : DbContext
     {
         public DbSet<Registration> Registrations { get; set; }
         public string DatabasePath { get; private set; }
-        public RegistrationDBContext()
+        public RepositoryDBContext()
         {
             DatabasePath = $"{Environment.CurrentDirectory}{Path.DirectorySeparatorChar}Registration.sqlite";
         }
