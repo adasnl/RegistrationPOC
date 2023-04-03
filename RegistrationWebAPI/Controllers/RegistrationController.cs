@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Registration.BusinessLayer.DTO;
 using RegistrationBL.Interface;
 using RegistrationDA.Entities;
 
@@ -18,7 +19,7 @@ namespace RegistrationWebAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<RegistrationDA.Entities.Registration> Get(int id)
+        public async Task<RegistrationDTO> Get(int id)
         {
             return await _registration.RegistrationGetById(id);
         }
@@ -59,13 +60,13 @@ namespace RegistrationWebAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<RegistrationDA.Entities.Registration>> Get()
+        public async Task<IEnumerable<RegistrationDTO>> Get()
         {
             return await _registration.GetAll();
         }
 
         [HttpPost("SearchRegistrations")]
-        public async Task<IEnumerable<RegistrationDA.Entities.Registration>> SearchRegistrations([FromBody] SearchRegistration searchRegistration)
+        public async Task<IEnumerable<RegistrationDTO>> SearchRegistrations([FromBody] SearchRegistration searchRegistration)
         {
             return await _registration.SearchRegistration(searchRegistration.SearchKey ?? string.Empty);
         }

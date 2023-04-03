@@ -15,7 +15,7 @@ namespace Registration.DataAccess.Implementation
             _repositoryDBContext.Database.EnsureCreated();
         }
 
-        public async Task<IEnumerable<T>> GetAllEntities() => _repositoryDBContext.Set<T>().ToList();
+        public async Task<IEnumerable<T>> GetAllEntities() => await _repositoryDBContext.Set<T>().ToListAsync();
 
         public async Task<IEnumerable<T>> FindByCondition(Expression<Func<T, bool>> expression) =>
              _repositoryDBContext.Set<T>().Where(expression);

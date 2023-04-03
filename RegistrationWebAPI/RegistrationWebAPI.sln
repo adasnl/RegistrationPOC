@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistrationWebAPI", "RegistrationWebAPI.csproj", "{904FCEEE-6F54-49D4-8126-9D0596412E76}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistrationDA", "..\RegistrationDA\RegistrationDA.csproj", "{F6690FBB-A973-4ED4-89C6-507F22DCEAF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration.DataAccess", "..\RegistrationDA\Registration.DataAccess.csproj", "{F6690FBB-A973-4ED4-89C6-507F22DCEAF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationBL", "..\RegistrationBL\RegistrationBL.csproj", "{DB2430EA-93E1-473A-AB79-3368DEE344A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration.BusinessLayer", "..\RegistrationBL\Registration.BusinessLayer.csproj", "{DB2430EA-93E1-473A-AB79-3368DEE344A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

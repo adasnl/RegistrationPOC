@@ -53,20 +53,6 @@ namespace RegistrationDA.Implementation
         {
             var entries = await UpdateEntity(newRegistration);
             return entries;
-            //var registration = await _dbContext.Registrations.FindAsync(newRegistration.Id);
-
-            //if (registration != null)
-            //{
-            //    registration.PinCode = newRegistration.PinCode;
-            //    registration.RegisteredDate = newRegistration.RegisteredDate;
-            //    registration.PhoneNumber = newRegistration.PhoneNumber;
-            //    registration.Email = newRegistration.Email;
-            //    registration.City = newRegistration.City;
-            //    registration.Name = newRegistration.Name;
-            //    registration.ModifiedDate = DateTime.Now;
-            //}
-            //var entries = _dbContext.SaveChanges();
-            //return entries > 0 ? true : false;
         }
     }
 }

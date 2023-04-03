@@ -1,12 +1,12 @@
+using AutoMapper;
 using Microsoft.OpenApi.Models;
-using Registration.DataAccess.Implementation;
-using Registration.DataAccess.Interface;
 using RegistrationBL.Implementation;
 using RegistrationBL.Interface;
 using RegistrationDA.Entities;
 using RegistrationDA.Implementation;
 using RegistrationDA.Interface;
 using RegistrationWebAPI.Attributes;
+using RegistrationWebAPI.Common;
 using RegistrationWebAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -50,6 +50,13 @@ builder.Services.AddSwaggerGen(_ =>
 builder.Services.AddScoped<IRegistrationDataAccessService, RegistrationService>();
 builder.Services.AddScoped<IRegistrationBusinessLayerService, RegistrationBusinessLayerService>();
 builder.Services.AddDbContext<RepositoryDBContext>();
+
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new MappingProfile());
+});
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
 
 var app = builder.Build();
 

@@ -1,4 +1,6 @@
-﻿namespace RegistrationBL.Interface
+﻿using Registration.BusinessLayer.DTO;
+
+namespace RegistrationBL.Interface
 {
     public interface IRegistrationBusinessLayerService
     {
@@ -8,10 +10,10 @@
 
         Task<bool> Update(RegistrationDA.Entities.Registration registration);
 
-        Task<ICollection<RegistrationDA.Entities.Registration>> GetAll();
+        Task<ICollection<RegistrationDTO>> GetAll();
 
-        Task<RegistrationDA.Entities.Registration> RegistrationGetById(int id);
+        Task<RegistrationDTO> RegistrationGetById(int id);
 
-        Task<ICollection<RegistrationDA.Entities.Registration>> SearchRegistration(string value);
+        Task<ICollection<RegistrationDTO>> SearchRegistration(string value);
     }
 }
